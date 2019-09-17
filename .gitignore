@@ -1,0 +1,5 @@
+# Ignore virtual environment
+venv/
+
+# Ignore controller file
+run.py

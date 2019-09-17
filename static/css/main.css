@@ -1,0 +1,395 @@
+.main-text {
+  margin: auto;
+  max-width: 1000px !important;
+  height: auto;
+}
+
+.vertical-menu {
+  position: fixed;
+  height: 100%;
+  width: 310px;
+  text-align: center;
+  background-color: #edeef0;
+  padding-top: 30px;
+  top: 0px;
+  left: 0px;
+  overflow-x: hidden;
+  transition: 0.6s;
+}
+
+.vertical-menu .link-animation {
+  font-family: "Quicksand", Arial, sans-serif;
+  color: black;
+  font-weight: 300;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all ease-in-out 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: 3;
+  padding-bottom: 2.5px;
+}
+
+.vertical-menu .link-animation:hover {
+  color: #4287f5;
+  border-color: #4287f5;
+}
+
+.vertical-menu h2 {
+	font-family: "Playfair Display", Georgia, serif;
+	font-weight: 400;
+}
+
+img {
+	border-radius: 50%;
+	border: 4px solid white;
+	border-color: white;
+	width: 150px;
+}
+
+#bodyText h3 {
+	font-weight: 300;
+	color: black;
+}
+
+#bodyText p {
+	line-height: 2.0;
+	letter-spacing: 0.7px;
+	font-size: 16px;
+}
+
+#bodyText {
+	transition: margin-left 0.6s;
+	padding-left: 70px;
+  padding-top: 50px;
+  padding-right: 60px;
+	font-family: "Playfair Display", Georgia, serif;
+  color: black;
+  font-weight: 300;
+}
+
+hr {
+	border: 0.5px solid #eee;;
+}
+
+.vertical-menu #close-btn {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 35px;
+  display:none;
+  cursor: pointer;
+}
+
+.vertical-menu #close-btn:hover {
+  color: #4287f5;  
+}
+
+#toggle-btn {
+  color: black;
+	top: 0px;
+  left: 5px;
+  position: fixed;
+  font-size: 22px;
+  cursor:pointer
+}
+
+#toggle-btn:hover {
+  color: #4287f5;
+}
+
+#email-link {
+  text-decoration: none;
+  color: #4287f5;
+}
+
+#cv-download {
+  color: #4287f5;
+  line-height: 1.5;
+  display: block;
+  text-decoration: none;
+}
+
+#download-text {
+  font-family: "Quicksand", Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+#uni-link {
+  text-decoration: none;
+  color: #4287f5;
+}
+
+.course-info {
+  font-family: "Quicksand", Arial, sans-serif;
+  position:relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  background-color: #edeef0;
+  height: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.course-info:hover {
+  background-color: #4287f5 !important;
+  color: white !important;
+  border: 1px solid #4287f5 !important;
+}
+
+.fa-plus {
+  position: absolute;
+  font-size: 16px;
+  top: 22px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.fa-minus {
+  position: absolute;
+  font-size: 16px;
+  top: 22px;
+  right: 10px;
+  cursor: pointer;
+  display: none;
+}
+
+.university-info {
+  width: 100%;
+  height: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-left: 18px;
+  padding-right: 18px;
+  display: none;
+}
+
+.placeholder {
+  padding: 2px;
+}
+
+.university-info .uni-style {
+  font-weight: bold; 
+  letter-spacing: 0.5px;
+}
+
+.fa-check {
+  color: #4287f5;
+}
+
+.row .display-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row .display-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+
+#kseaplus-card {
+  border-left: 4px solid #4287f5;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#kinbase-card {
+  border-left: 4px solid #41a35b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#kinet-card {
+  border-left: 4px solid #f54545;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#pdb-card {
+   border-left: 4px solid #f7b016;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#skills-card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card h5 {
+  text-align: left;
+}
+
+#projects .card-header {
+  height: 50px;
+}
+
+#skills .card-header {
+  height: auto;
+  padding-top: 25px;
+}
+
+.nav-pills a.active {
+  background-color: #4287f5 !important;
+}
+
+.nav-link {
+  color: #2f88f5;
+  margin-right: 10px;
+}
+
+.card-body p {
+  vertical-align: middle !important;
+}
+
+.card-body .card-custom {
+  font-size: 15px !important; 
+  line-height: 1.6 !important;
+}
+
+.sep {
+  color: #2f88f5;
+}
+
+.card-header #ksea-github {
+  font-size: 17px;
+  position: absolute;
+  color: #4287f5;
+  cursor: pointer;
+  right: 4px;
+  top: 14px;
+}
+
+.card-header #ksea-web {
+  font-size: 17px;
+  position: absolute;
+  color: #4287f5;
+  cursor: pointer;
+  right: 28px;
+  top: 14px;
+}
+
+.card-header #kinbase-github {
+  font-size: 17px;
+  position: absolute;
+  color: #41a35b;
+  cursor: pointer;
+  right: 4px;
+  top: 14px;
+}
+
+.card-header #kinbase-web {
+  font-size: 17px;
+  position: absolute;
+  color: #41a35b;
+  cursor: pointer;
+  right: 28px;
+  top: 14px;
+}
+
+.card-header #kinet-github {
+  font-size: 17px;
+  position: absolute;
+  color: #f54545;
+  cursor: pointer;
+  right: 4px;
+  top: 14px;
+}
+
+.card-header #pdb-github {
+  font-size: 17px;
+  position: absolute;
+  color: #f7b016;
+  cursor: pointer;
+  right: 4px;
+  top: 14px;
+}
+
+.ksea-check {
+  color: #4287f5;
+}
+
+.kinbase-check {
+  color: #41a35b;
+}
+
+.kinet-check {
+  color: #f54545;
+}
+
+.pdb-check {
+  color: #f7b016;
+}
+
+.row a {
+  text-decoration: none;
+}
+
+
+.other-info {
+  width: 100%
+  height: auto;
+  background-color: #63a7ff;
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+
+.footnote {
+  font-size: 18px !important;
+}
+
+.other-info .other-icons {
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  padding-right: 30px;
+}
+
+
+@media screen and (max-width: 500px) {
+  #bodyText h3 {
+    text-align: center;
+  }
+  #bodyText {
+    padding-left: 17px;
+    padding-top: 17px;
+    padding-right: 17px;
+
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .course-info {
+    font-size: 14px;
+    padding-left: 7px;
+    overflow: hidden;
+  }
+
+  .course-info .fa-plus {
+    right: 5px;
+    font-size: 14px;
+  }
+
+  .course-info .fa-minus {
+    right: 5px;
+    font-size: 14px;
+  }
+
+  #toggle-btn {
+    position: absolute;
+  }
+
+  #bodyText {
+    padding-left: 1px;
+    padding-right: 1px;
+  }
+}
