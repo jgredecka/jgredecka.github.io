@@ -110,11 +110,11 @@ hr {
 }
 
 #mobile-download {
-  font-size: 17px;
+  font-size: 16px;
   display: none;
   position: absolute;
   top: 8px;
-  right: 5px;
+  right: 7px;
   color: #4287f5;
   text-decoration: none;
 }
