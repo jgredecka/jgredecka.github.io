@@ -24,7 +24,7 @@
   font-size: 14px;
   text-decoration: none;
   border-bottom: 1px solid transparent;
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.6s;
   text-transform: uppercase;
   letter-spacing: 1px;
   line-height: 3;
@@ -70,7 +70,7 @@ img {
 }
 
 hr {
-	border: 0.5px solid #eee;;
+	border: 0.5px solid #eee;
 }
 
 .vertical-menu #close-btn {
@@ -86,14 +86,39 @@ hr {
   color: #4287f5;  
 }
 */
-#toggle-btn {
-  color: black;
-	top: 0px;
-  left: 5px;
+
+#toggle-container {
+  background-color: #FAFAFB;
   position: fixed;
-  font-size: 22px;
-  cursor:pointer
+  overflow-y: hidden;
+  top: 0;
+  width: 100%;
+  height: 33px;
+  z-index: 9999;
+  padding-left: 5px;
+  border-bottom: 1px solid #eee;
+  transition: 0.6s;
 }
+
+#toggle-btn {
+  position: absolute;
+  transition: all ease-in-out 0.6s;
+  color: black;
+  font-size: 22px;
+  left: 5px;
+  cursor:pointer;
+}
+
+#mobile-download {
+  font-size: 17px;
+  display: none;
+  position: absolute;
+  top: 8px;
+  right: 5px;
+  color: #4287f5;
+  text-decoration: none;
+}
+
 /*
 #toggle-btn:hover {
   color: #4287f5;
@@ -336,7 +361,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-decoration: none;
 }
 
-
 .other-info {
   width: 100%
   height: auto;
@@ -355,6 +379,9 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: white;
   font-size: 30px;
   text-decoration: none;
+}
+
+.other-info .icon-pad {
   padding-right: 30px;
 }
 
@@ -379,13 +406,36 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
  }
 }
 
+@media screen and (max-width: 375px) {
+  img {
+    width: 130px;
+  }
+}
+
+
+@media screen and (max-width: 414px) {
+  #cv-download {
+    display: none;
+  }
+  #mobile-download {
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  #bodyText {
+    padding-top: 70px;
+
+  }
+}
+
 @media screen and (max-width: 500px) {
   #bodyText h3 {
     text-align: center;
   }
   #bodyText {
     padding-left: 17px;
-    padding-top: 17px;
     padding-right: 17px;
 
   }
@@ -406,10 +456,6 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   .course-info .fa-minus {
     right: 5px;
     font-size: 14px;
-  }
-
-  #toggle-btn {
-    position: absolute;
   }
 
   #bodyText {

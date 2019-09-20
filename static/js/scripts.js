@@ -1,5 +1,6 @@
 // Function that opens side menu when toggle button is clicked.
 function openNav() {
+  document.getElementById("toggle-container").style.height = "0"
   document.getElementById("verticalMenu").style.width = "310px";
   document.getElementById("bodyText").style.marginLeft = "310px";
   document.getElementById("close-btn").style.display = "block";
@@ -7,6 +8,7 @@ function openNav() {
 
 // Function that closes side menu when close button is clicked.
 function closeNav() {
+  document.getElementById("toggle-container").style.height = "33px";
   document.getElementById("verticalMenu").style.width = "0";
   document.getElementById("bodyText").style.marginLeft= "15px";
   document.getElementById("bodyText").style.marginRight= "15px";
@@ -15,11 +17,13 @@ function closeNav() {
 // Function that displays/hides side menu depending on the viewport width.
 function checkViewport(x) {
   if (x.matches) { // hide side navigation if media query matches
+    document.getElementById("toggle-container").style.height = "33px";
     document.getElementById("verticalMenu").style.width = "0";
     document.getElementById("bodyText").style.marginLeft= "15px";
     document.getElementById("bodyText").style.marginRight= "15px";
   } 
   else { // show side navigation otherwise
+    document.getElementById("toggle-container").style.height = "0"
     document.getElementById("verticalMenu").style.width = "310px";
     document.getElementById("bodyText").style.marginLeft = "310px";
     document.getElementById("close-btn").style.display = "none";
