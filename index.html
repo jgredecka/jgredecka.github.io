@@ -273,9 +273,9 @@ var lmb = document.getElementById("mrc");
 lmb.addEventListener("click", mrcShow);
 
 // Activates Boostrap tooltips.
-$(document).ready(function () {
+if(isTouchDevice()===false) {
     $('[data-toggle="tooltip"]').tooltip()
-})
+}
 </script>
 
 </body>
