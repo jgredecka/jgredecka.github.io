@@ -30,17 +30,17 @@
   <br><br>
   <h2>Justyna Gredecka</h2>
   <br>
-  <a href="#summary" class="link-animation">About Me</a>
+  <a id="summary" class="link-animation">About Me</a>
   <br>
-	<a href="#skills" class="link-animation">Skills</a>
+	<a id="skills" class="link-animation">Skills</a>
   <br>
-	<a href="#projects" class="link-animation">Projects</a>
+	<a id="projects" class="link-animation">Projects</a>
   <br>
-	<a href="#education" class="link-animation">Education</a>
+	<a id="education" class="link-animation">Education</a>
   <br>
-  <a href="#employment" class="link-animation">Employment</a>
+  <a id="employment" class="link-animation">Employment</a>
   <br>
-	<a href="#contact" class="link-animation">Contact</a>
+	<a id="contact" class="link-animation">Contact</a>
   <br><br>
    <a href="/static/cv/Resume-Justyna-Gredecka.pdf" download id="cv-download" class="fas fa-cloud-download-alt">
      <br>
@@ -50,14 +50,14 @@
 <!-- Page content -->
 <div class="main-text" id="bodyText">
 
-   <div id="summary">
+   <div id="summary-section">
      <h3>About Me</h3>
       <hr>
       <p>I am a recent Bioinformatics graduate at Queen Mary Univeristy of London. I have experience developing tools using Python and am proficient in full stack web development. I enjoy learning new technologies and using programming to solve challenging problems independently and as part of a team.
       </p>
    </div>
    <br>
-   <div id="skills">
+   <div id="skills-section">
     <!-- Bootstrap card combined with nav tabs to display relevant skills -->
     <h3>Skills</h3>
     <hr>
@@ -123,7 +123,7 @@
 </div>
    </div>
    <br><br>
-   <div id="projects">
+   <div id="projects-section">
     <!-- Bootstrap cards giving university project highlights. Use of Bootstrap columns ensures responsive layout. -->
      <h3>Projects</h3>
      <hr>
@@ -181,7 +181,7 @@
      </div>
    </div>
    <br><br>
-   <div id="education">
+   <div id="education-section">
     <!-- Collapsible DIVs containing course highlights for each university degree.-->
      <h3>Education</h3>
      <hr>
@@ -215,7 +215,7 @@
      </div>
    </div>
    <br><br>
-   <div id="employment"></div>
+   <div id="employment-section"></div>
    <!-- Employment information with collapsible div-->
    <h3>Employment</h3>
    <hr>
@@ -231,7 +231,7 @@
        <p><span class="fas fa-check"></span> Optimised, maintained and updated experimental protocols in the Filemaker database.</p>
      </div>
    <br><br>
-   <div id="contact"></div>
+   <div id="contact-section"></div>
      <h3>Contact</h3>
      <hr>
      <p>If you would like to learn more about my projects, ask any questions or just reach out to say hello, feel free to contact me at <a id="email-link" href="mailto:justynagredecka@outlook.com">justynagredecka@outlook.com.</a></p>
@@ -275,7 +275,13 @@ document.getElementById("mrcInfo").style.display = "none";
 var lmb = document.getElementById("mrc");
 lmb.addEventListener("click", mrcShow);
 
-// Activates Boostrap tooltips.
+// Jumps to a relevant body section ID when the corresponding navigational link is clicked.
+var items = document.getElementsByClassName("link-animation");
+for (var i = 0; i < items.length; i++) {
+  items[i].addEventListener("click", function() { jumpToDiv(this.id, hrefJump); });
+}
+
+// Activates Boostrap tooltips on devices that fully support hovering behaviour.
 if(isTouchDevice()===false) {
     $('[data-toggle="tooltip"]').tooltip()
 }

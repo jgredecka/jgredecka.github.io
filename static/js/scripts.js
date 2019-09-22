@@ -95,6 +95,26 @@ function mrcShow() {
   }
 }
 
+
+function jumpToDiv (uid, callback) {
+ if (window.matchMedia("(max-width: 800px)").matches) {
+  document.getElementById("toggle-container").style.height = "33px";
+  document.getElementById("verticalMenu").style.width = "0";
+  document.getElementById("bodyText").style.marginLeft= "15px";
+  document.getElementById("bodyText").style.marginRight= "15px";
+  setTimeout(function() { callback(uid); 
+  }, 900);
+ }
+ else {
+  callback(uid);
+ }
+}
+
+function hrefJump (clicked_id) {
+  var elmnt = document.getElementById(clicked_id + '-section')
+  elmnt.scrollIntoView();
+}
+
 function isTouchDevice() {
     return true == ("ontouchstart" in window || window.DocumentTouch && document instanceof DocumentTouch);
 }
