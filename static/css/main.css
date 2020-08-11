@@ -89,24 +89,23 @@ hr {
 */
 
 #toggle-container {
+  display: flex;
+  align-items: center;
   background-color: #FAFAFB;
   position: fixed;
   overflow-y: hidden;
   top: 0;
   width: 100%;
-  height: 33px;
   z-index: 9999;
-  padding-left: 5px;
+  padding-left: 10px;
   border-bottom: 1px solid #eee;
   transition: 0.6s;
 }
 
 #toggle-btn {
-  position: absolute;
   transition: all ease-in-out 0.6s;
   color: black;
-  font-size: 22px;
-  left: 5px;
+  font-size: 27px;
   cursor:pointer;
 }
 
@@ -145,7 +144,7 @@ hr {
   font-size: 14px;
 }
 
-#uni-link {
+.uni-link {
   text-decoration: none;
   color: #4287f5;
 }
@@ -463,4 +462,9 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding-left: 1px;
     padding-right: 1px;
   }
+}
+
+.tab-pane .accent {
+  color: #007bff;
+  font-weight: bold;
 }

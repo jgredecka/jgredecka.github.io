@@ -95,6 +95,27 @@ function mrcShow() {
   }
 }
 
+function ccgShow() {
+  var ccg = document.getElementById("ccgInfo")
+
+  if (ccg.style.display === "none") {
+    document.getElementById("ccg").style.backgroundColor = "#4287f5";
+    document.getElementById("ccg").style.color = "white";
+    document.getElementById("ccg").style.border = "1px solid #4287f5";
+    document.getElementById("ccg-extend").style.display = "none";
+    document.getElementById("ccg-collapse").style.display = "block";
+    ccg.style.display = "block";
+  }
+  else {
+    document.getElementById("ccg").style.backgroundColor = "#edeef0";
+    document.getElementById("ccg").style.color = "black";
+    document.getElementById("ccg").style.border = "1px solid #e0e0e0";
+    document.getElementById("ccg-collapse").style.display = "none";
+    document.getElementById("ccg-extend").style.display  = "block";
+    ccg.style.display = "none";
+
+  }
+}
 
 function jumpToDiv (uid, callback) {
  if (window.matchMedia("(max-width: 800px)").matches) {
