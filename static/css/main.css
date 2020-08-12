@@ -4,6 +4,133 @@
   height: auto;
 }
 
+.projects {
+  max-width: 750px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.project-card {
+  position: relative;
+  border: 1px solid #e0e0e0;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  width: 190px;
+  height: 150px;
+  color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  font-size: 13px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-custom-title {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.fa-github-square {
+  color: #36a4f7;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.fa-check {
+  color: #36a4f7;
+}
+
+.fa-external-link-alt {
+  font-size: 11px;
+  color: #36a4f7
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  font-size: 12px;
+  color: #36a4f7;
+  border-color: #36a4f7;
+}
+
+.red {
+  border-bottom: 2px solid red;
+}
+
+.green {
+  border-bottom: 2px solid #24d654;
+}
+
+.blue {
+  border-bottom: 2px solid #36a4f7;
+}
+
+.yellow {
+  border-bottom: 2px solid #e8e400;
+}
+
+.purple {
+  border-bottom: 2px solid #8a63d6;
+}
+
+@media screen and (max-width: 1052px) {
+  .project-card {
+    width: 160px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 971px) {
+  .project-card {
+    width: 190px;
+    height: 150px;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .project-card {
+    width: 160px;
+    height: 140px;
+  }
+  .fa-github-square {
+    color: #36a4f7;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .card-custom-title {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.fa-external-link-alt {
+    font-size: 11px;
+    color: #36a4f7
+  }
+.btn {
+    font-size: 11px;
+    color: #36a4f7;
+    border-color: #36a4f7;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .project-card {
+    width: 150px;
+    height: 130px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .project-card {
+    width: 130px;
+    height: 125px;
+  }
+}
+
 .vertical-menu {
   position: fixed;
   height: 100%;
@@ -31,12 +158,7 @@
   padding-bottom: 2.5px;
   cursor: pointer;
 }
-/*
-.vertical-menu .link-animation:hover {
-  color: #4287f5;
-  border-color: #4287f5;
-}
-*/
+
 .vertical-menu h2 {
 	font-family: "Playfair Display", Georgia, serif;
 	font-weight: 400;
@@ -82,11 +204,6 @@ hr {
   display:none;
   cursor: pointer;
 }
-/*
-.vertical-menu #close-btn:hover {
-  color: #4287f5;  
-}
-*/
 
 #toggle-container {
   display: flex;
@@ -119,11 +236,6 @@ hr {
   text-decoration: none;
 }
 
-/*
-#toggle-btn:hover {
-  color: #4287f5;
-}
-*/
 #email-link {
   text-decoration: none;
   color: #4287f5;
@@ -166,13 +278,7 @@ hr {
   font-weight: 300;
   cursor: pointer;
 }
-/*
-.course-info:hover {
-  background-color: #4287f5 !important;
-  color: white !important;
-  border: 1px solid #4287f5 !important;
-}
-*/
+
 .fa-plus {
   position: absolute;
   font-size: 16px;
@@ -210,50 +316,8 @@ hr {
   letter-spacing: 0.5px;
 }
 
-.fa-check {
-  color: #4287f5;
-}
-
-.row .display-flex {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.row .display-flex > [class*='col-'] {
-  display: flex;
-  flex-direction: column;
-}
-
-#kseaplus-card {
-  border-left: 4px solid #4287f5;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#kinbase-card {
-  border-left: 4px solid #41a35b;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#kinet-card {
-  border-left: 4px solid #f54545;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#pdb-card {
-   border-left: 4px solid #f7b016;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
 #skills-card {
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.card h5 {
-  text-align: left;
-}
-
-#projects-section .card-header {
-  height: 50px;
 }
 
 #skills-section .card-header {
@@ -263,102 +327,16 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 .nav-pills a.active {
   background-color: #4287f5 !important;
+  padding: 4px 6px;
 }
 
 .nav-link {
   color: #2f88f5;
   margin-right: 10px;
 }
-/*
-.nav-link:hover {
-  color: #2f48a3;
-}
-*/
-.card-body p {
-  vertical-align: middle !important;
-}
-
-.card-body .card-custom {
-  font-size: 15px !important; 
-  line-height: 1.6 !important;
-}
 
 .sep {
   color: #2f88f5;
-}
-
-.card-header #ksea-github {
-  font-size: 17px;
-  position: absolute;
-  color: #4287f5;
-  cursor: pointer;
-  right: 4px;
-  top: 14px;
-}
-
-.card-header #ksea-web {
-  font-size: 17px;
-  position: absolute;
-  color: #4287f5;
-  cursor: pointer;
-  right: 28px;
-  top: 14px;
-}
-
-.card-header #kinbase-github {
-  font-size: 17px;
-  position: absolute;
-  color: #41a35b;
-  cursor: pointer;
-  right: 4px;
-  top: 14px;
-}
-
-.card-header #kinbase-web {
-  font-size: 17px;
-  position: absolute;
-  color: #41a35b;
-  cursor: pointer;
-  right: 28px;
-  top: 14px;
-}
-
-.card-header #kinet-github {
-  font-size: 17px;
-  position: absolute;
-  color: #f54545;
-  cursor: pointer;
-  right: 4px;
-  top: 14px;
-}
-
-.card-header #pdb-github {
-  font-size: 17px;
-  position: absolute;
-  color: #f7b016;
-  cursor: pointer;
-  right: 4px;
-  top: 14px;
-}
-
-.ksea-check {
-  color: #4287f5;
-}
-
-.kinbase-check {
-  color: #41a35b;
-}
-
-.kinet-check {
-  color: #f54545;
-}
-
-.pdb-check {
-  color: #f7b016;
-}
-
-.row a {
-  text-decoration: none;
 }
 
 .other-info {
@@ -387,80 +365,123 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 @media (hover: hover) {
   .vertical-menu .link-animation:hover {
-   color: #4287f5 !important;
-   border-color: #4287f5;
+    color: #4287f5 !important;
+    border-color: #4287f5;
  }
- .vertical-menu #close-btn:hover {
-  color: #4287f5;  
+  .vertical-menu #close-btn:hover {
+    color: #4287f5;  
  }
- #toggle-btn:hover {
-  color: #4287f5;
+  #toggle-btn:hover {
+    color: #4287f5;
  }
- .course-info:hover {
-  background-color: #4287f5 !important;
-  color: white !important;
-  border: 1px solid #4287f5 !important;
+  .course-info:hover {
+    background-color: #4287f5 !important;
+    color: white !important;
+    border: 1px solid #4287f5 !important;
  }
- .nav-link:hover {
-  color: #2f48a3;
+  .nav-link:hover {
+    color: #2f48a3 !important; 
  }
-}
-
-@media screen and (max-width: 375px) {
-  img {
-    width: 130px;
+  .btn-outline-primary:hover {
+    background-color: #ffff;
+    color: #36a4f7;
+    border-color: #36a4f7;
+ }
+  .btn-outline-primary:active:focus {
+    background-color: #ffff !important;
+    color: #36a4f7 !important;
+    border-color: #36a4f7 !important;
   }
-}
-
-
-@media screen and (max-width: 414px) {
-  #cv-download {
-    display: none;
-  }
-  #mobile-download {
-    display: block;
-  }
-
 }
 
 @media screen and (max-width: 800px) {
   #bodyText {
     padding-top: 70px;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  #bodyText h3 {
+    text-align: center;
+  }
+  #verticalMenu img {
+    width: 120px;
+  }
+  #verticalMenu h2 {
+    font-size: 22px;
+  }
+  #verticalMenu .link-animation {
+    font-size: 13px;
+  }
+  #verticalMenu #cv-download {
+    font-size: 13px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  #bodyText h3 {
-    text-align: center;
-  }
   #bodyText {
     padding-left: 17px;
     padding-right: 17px;
-
   }
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 425px) {
   .course-info {
-    font-size: 14px;
-    padding-left: 7px;
+    font-size: 13px;
+  }
+  .fa-plus {
+    font-size: 13px;
+  }
+  .fa-minus {
+    font-size: 13px;
+  }
+  .nav-item {
+    font-size: 15px;
+  }
+  #pills-tabContent p {
+    font-size: 15px;
+  }
+  #summary-section p {
+    text-align: center;
+  }
+  #contact-section p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .course-info {
+    font-size: 12px;
     overflow: hidden;
   }
-
-  .course-info .fa-plus {
-    right: 5px;
-    font-size: 14px;
+  .fa-plus {
+    font-size: 12px;
   }
-
-  .course-info .fa-minus {
-    right: 5px;
-    font-size: 14px;
+  .fa-minus {
+    font-size: 12px;
   }
-
   #bodyText {
     padding-left: 1px;
     padding-right: 1px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .course-info {
+    font-size: 11px;
+    overflow: hidden;
+  }
+  .fa-plus {
+    font-size: 11px;
+  }
+  .fa-minus {
+    font-size: 11px;
+  }
+   .nav-item {
+    font-size: 14px;
+}
+  #pills-tabContent p {
+    font-size: 14px;
   }
 }
 

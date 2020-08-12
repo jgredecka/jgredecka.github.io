@@ -11,7 +11,7 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous"> 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/main.css?version=104">
   <meta name="author" content="Justyna Gredecka">
   <meta name="keywords" content="justyna, gredecka, jgredecka, website, portfolio, linkedin, github, python, software, developer, bioinformatics, bioinformatician, qmul, queen mary university of london">
   <meta name="description" content="Justyna Gredecka's portfolio website.">
@@ -21,7 +21,6 @@
 <!-- Menu toggle button-->
 <div id="toggle-container">
  <div id="toggle-btn">&#9776;</div>
- <a href="/static/cv/Resume-Justyna-Gredecka.pdf" download id="mobile-download" class="fas fa-cloud-download-alt"> Resume</a>
 </div>
 <!-- Side navigation -->
  <div class="vertical-menu" id="verticalMenu">
@@ -53,7 +52,7 @@
    <div id="summary-section">
      <h3>About Me</h3>
       <hr>
-      <p>I am a Full Stack Software Engineer with experience developing modern web applications using various back-end and front-end frameworks including React.js, Flask and Django. I also have experience using Python to manipulate and analyse complex bioinformatics data. I enjoy learning new technologies and solving challenging problems independently and as part of a team.
+      <p>I am a Full Stack Software Engineer with experience developing modern web applications using various back-end and front-end frameworks/libraries including React.js, Flask and Django. I also have experience using Python to manipulate and analyse complex bioinformatics data. I enjoy learning new technologies and solving challenging problems independently and as part of a team.
       </p>
    </div>
    <br>
@@ -182,64 +181,82 @@
 </div>
    </div>
    <br><br>
-   <div id="projects-section">
     <!-- Bootstrap cards giving university project highlights. Use of Bootstrap columns ensures responsive layout. -->
+     <div id="projects-section"></div>
      <h3>Projects</h3>
      <hr>
      <br>
-     <div class="row">
-      <div class="col-lg-6 display-flex mb-2">
-        <div class="card" id="kseaplus-card">
-        <div class="card-header">
-        <h5>KSEAPlus</h5>
-        <a href="https://github.com/jgredecka/KSEAPlus" id="ksea-github" class="fab fa-github" data-toggle="tooltip" data-placement="top" title="Source Code"></a>
-        <a href="https://ksea-plus.herokuapp.com" id="ksea-web" class="fas fa-globe" data-toggle="tooltip" data-placement="top" title="Visit Website"></a>
+     <div class="projects">
+       <div class="project-card red">
+         <div class="card-custom-title">GitCat UI</div>
+         <br>
+         <i class="fab fa-github-square"></i>
+         <br><br>
+         <div class="web-app-btn">
+             <button type="button" class="btn btn-outline-primary btn-sm">
+                 In progress!
+             </button>
+         </div>
        </div>
-       <div class="card-body">
-        <p class="card-text card-custom"><i class="fas fa-check ksea-check"></i> Flask app implementing algorithms for protein kinase activity inference.<br><br><i class="fas fa-check ksea-check"></i> Data visualised with matplotlib and seaborn.<br><br><i class="fas fa-check ksea-check"></i> Utilises Celery and Redis along with AJAX requests to run analyses in the background.</p>
+       <div class="project-card yellow">
+         <div class="card-custom-title">GitCat API</div>
+         <br>
+         <i class="fab fa-github-square"></i>
+         <br><br>
+         <div class="web-app-btn">
+             <button type="button" class="btn btn-outline-primary btn-sm"> 
+                 In progress!
+             </button>
+         </div>
        </div>
+       <div class="project-card blue">
+         <div class="card-custom-title">KSEAPlus</div>
+         <br>
+         <a href="https://github.com/jgredecka/KSEAPlus"><i class="fab fa-github-square"></i></a>
+         <br><br>
+         <div class="web-app-btn">
+           <a href="https://ksea-plus.herokuapp.com/">
+             <button type="button" class="btn btn-outline-primary btn-sm">
+               <i class="fas fa-external-link-alt"></i> 
+                 Web app
+             </button>
+           </a>
+         </div>
        </div>
-      </div>
-      <div class="col-lg-6 display-flex mb-2">
-       <div class="card" id="kinbase-card">
-       <div class="card-header">
-        <h5>KinBase</h5>
-        <a href="https://github.com/jgredecka/KinBase" id="kinbase-github" class="fab fa-github" data-toggle="tooltip" data-placement="top" title="Source Code"></a>
-        <a href="https://kinbase.pythonanywhere.com" id="kinbase-web" class="fas fa-globe" data-toggle="tooltip" data-placement="top" title="Visit Website"></a>
+       <div class="project-card purple">
+         <div class="card-custom-title">KinBase</div>
+         <br>
+         <a href="https://github.com/jgredecka/KinBase">
+           <i class="fab fa-github-square"></i>
+         </a>
+         <br><br>
+         <div class="web-app-btn">
+           <a href="https://kinbase.pythonanywhere.com/">
+              <button type="button" class="btn btn-outline-primary btn-sm">
+                <i class="fas fa-external-link-alt"></i> 
+                  Web app
+              </button>
+           </a>
+         </div>
        </div>
-       <div class="card-body">
-        <p class="card-text card-custom"><i class="fas fa-check kinbase-check"></i> Web app enabling users to search for data on protein kinases and related molecules.<br><br><i class="fas fa-check kinbase-check"></i> Built with the microframework Flask.<br><br><i class="fas fa-check kinbase-check"></i> SQLAlchemy used as an ORM to query and retrieve data stored in SQLite database.</p>
+       <div class="project-card green">
+         <div class="card-custom-title">PDBParser</div>
+         <br>
+         <a href="https://github.com/jgredecka/PDBParser">
+           <i class="fab fa-github-square"></i>
+         </a>
        </div>
+       <div class="project-card red">
+         <div class="card-custom-title">KiNet</div>
+         <br>
+         <a href="https://github.com/jgredecka/KiNet">
+           <i class="fab fa-github-square"></i>
+         </a>
        </div>
-      </div>
      </div>
-     <div class="row">
-      <div class="col-lg-6 display-flex mb-2">
-        <div class="card" id="kinet-card">
-        <div class="card-header">
-        <h5>KiNet</h5>
-        <a href="https://github.com/jgredecka/KiNet" id="kinet-github" class="fab fa-github" data-toggle="tooltip" data-placement="top" title="Source Code"></a>
-       </div>
-       <div class="card-body">
-        <p class="card-text card-custom"><i class="fas fa-check kinet-check"></i> Python program that retrieves protein information from UniProt RESTful API.<br><br><i class="fas fa-check kinet-check"></i> Libraries used include urllib and urlib2.<br><br><i class="fas fa-check kinet-check"></i> Generated .SIF file is used to generate an interaction network via Cytoscape software.</p>
-       </div>
-       </div>
-      </div>
-      <div class="col-lg-6 display-flex mb-2">
-        <div class="card" id="pdb-card">
-        <div class="card-header">
-        <h5>PDBParser</h5>
-        <a href="https://github.com/jgredecka/PDBParser" id="pdb-github" class="fab fa-github" data-toggle="tooltip" data-placement="top" title="Source Code"></a>
-        </div>
-       <div class="card-body">
-        <p class="card-text card-custom"><i class="fas fa-check pdb-check"></i> Python program that parses and analyses protein structural data from PDB files.<br><br> <i class="fas fa-check pdb-check"></i> Enables single and multiple file analysis.<br><br><i class="fas fa-check pdb-check"></i> matplotlib used as a data visualisation tool for barplot generation.</p>
-       </div>
-       </div>
-      </div>
-     </div>
-   </div>
-   <br><br>
+     <br><br>
    <!-- Employment information with collapsible div-->
+   <div id="employment-section"></div>
    <h3>Employment</h3>
    <hr>
      <div id="ccg" class="course-info">
@@ -335,11 +352,12 @@
      </div>
    </div>
    <br><br>
-   <div id="contact-section"></div>
+   <div id="contact-section">
      <h3>Contact</h3>
      <hr>
      <p>If you would like to learn more about my projects, ask any questions or just reach out to say hello, feel free to contact me at <a id="email-link" href="mailto:justynagredecka@outlook.com">justynagredecka@outlook.com.</a>
      </p>
+   </div>
      <br><br>
      <div class="other-info">
        <p class="footnote">Thank you for reading!</p><br>
@@ -363,7 +381,7 @@ var y = document.getElementById("close-btn");
 y.addEventListener("click", closeNav);
 
 // Show/hide side menu depending on the viewport width.
-var x = window.matchMedia("(max-width: 800px)")
+var x = window.matchMedia("(max-width: 970px)")
 checkViewport(x) // Call listener function at run time
 x.addListener(checkViewport) // Attach listener function on state changes
 
