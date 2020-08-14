@@ -330,6 +330,10 @@ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 4px 6px;
 }
 
+.nav-pills a.active:hover {
+  color: #ffff !important;
+}
+
 .nav-link {
   color: #2f88f5;
   margin-right: 10px;
